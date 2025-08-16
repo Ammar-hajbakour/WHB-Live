@@ -14,7 +14,32 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "WHB Live",
-  description: "Your go-to collaborative editor",
+  description: "A live Collaborative Editor and sharing documents.",
+  icons: {
+    icon: "/favicon.ico", // or .png, .svg, etc.
+  },
+  openGraph: {
+    title: "WHB Live",
+    description: "A live Collaborative Editor and sharing documents.",
+    url: "https://whb-live-xfjg.vercel.app",
+    siteName: "WHB Live",
+    images: [
+      {
+        url: "/assets/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Project Logo or Preview Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WHB Live",
+    description: "A live Collaborative Editor and sharing documents.",
+    images: ["/assets/images/logo.png"],
+  },
 };
 
 export default function RootLayout({
