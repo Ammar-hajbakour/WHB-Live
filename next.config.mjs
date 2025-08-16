@@ -3,7 +3,15 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // images: {
+  //   remotePatterns: [{ protocol: 'https', hostname: 'img.clerk.com' }]
+  // }
+  // images: {
+  //   remotePatterns: [new URL('https://img.clerk.com')],
+  // },
   images: {
-    remotePatterns: [{ protocol: 'https', hostname: 'img.clerk.com' }]
-  }
+    domains: ['img.clerk.com'],
+  },
 };
+
+export default nextConfig;
