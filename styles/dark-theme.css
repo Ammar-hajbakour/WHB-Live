@@ -290,7 +290,8 @@ body {
   position: absolute;
 }
 .uncheck-listitem[dir="rtl"]:before,
-.check-listitem[dir="rtl"]:before {
+.check-listitem[dir="rtl"]:before,
+.check-listitem[dir="rtl"]:after {
   left: auto;
   right: 0;
 }
@@ -322,6 +323,9 @@ body {
   height: 6px;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
+}
+.check-listitem[dir="rtl"]:after {
+  right: 6px;
 }
 .editor-nested-listitem {
   list-style-type: none;
